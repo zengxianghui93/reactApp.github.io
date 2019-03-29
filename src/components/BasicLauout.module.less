@@ -1,0 +1,36 @@
+.basic-layout-wrap {
+  min-height: 100vh;
+  background: #fff;
+  .sider-menu-link {
+    display: inline-block;
+  }
+  .header-title {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+    text-shadow: hsla(0,0%,100%,.75) 0 1px 0;
+  }
+  .mini-header-title {
+    font-size: 20px;
+    color: #999;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    text-shadow: hsla(0,0%,100%,.75) 0 1px 0;
+  }
+  :global {
+    .ant-menu-item {
+      margin: 0;
+    }
+    .ant-layout-sider-zero-width-trigger {
+      background: rgba(0, 0, 0, 0.65);
+      top: 0;
+      // height: 36px;
+    }
+  }
+}
