@@ -57,11 +57,18 @@ class BasicLayout extends React.Component {
               <Icon type="schedule" />
               <Link className={styles['sider-menu-link']} to="/inbox">文章存档</Link>
             </Menu.Item>
-            <SubMenu key="sub3" title={<span><Icon type="notification" />Fullstack-React</span>}>
-              <Menu.Item key="9"><Link className={styles['sider-menu-link']} to="/charpater_1">charpater_1</Link></Menu.Item>
-              <Menu.Item key="10"><Link className={styles['sider-menu-link']} to="/option2">option2</Link></Menu.Item>
-              <Menu.Item key="11"><Link className={styles['sider-menu-link']} to="/option3">option3</Link></Menu.Item>
-              <Menu.Item key="12"><Link className={styles['sider-menu-link']} to="/option4">option4</Link></Menu.Item>
+            <SubMenu key="sub3" title={<span><Icon type="notification" />Fullstack-React Part I</span>}>
+              <Menu.Item key="9"><Link className={styles['sider-menu-link']} to="/charpater_1" title="charpater_1">charpater_1</Link></Menu.Item>
+              <Menu.Item key="10"><Link className={styles['sider-menu-link']} to="/charpater_2" title="React子组件调用父组件更新数据">React子组件调用父组件更新数据</Link></Menu.Item>
+              <Menu.Item key="11"><Link className={styles['sider-menu-link']} to="/option3" title="Your first Reavt Web Application">Your first Reavt Web Application</Link></Menu.Item>
+              <Menu.Item key="12"><Link className={styles['sider-menu-link']} to="/option4" title="Components">Components</Link></Menu.Item>
+              <Menu.Item key="13"><Link className={styles['sider-menu-link']} to="/option4" title="Components & Servers">Components & Servers</Link></Menu.Item>
+              <Menu.Item key="14"><Link className={styles['sider-menu-link']} to="/option4" title="JSX and the Virtual DOM">JSX and the Virtual DOM</Link></Menu.Item>
+              <Menu.Item key="15"><Link className={styles['sider-menu-link']} to="/option4" title="Advanced Component Configuration with props, state, and children">Advanced Component Configuration with props, state, and children</Link></Menu.Item>
+              <Menu.Item key="16"><Link className={styles['sider-menu-link']} to="/option4" title="Forms">Forms</Link></Menu.Item>
+              <Menu.Item key="17"><Link className={styles['sider-menu-link']} to="/option4" title="Using Webpack with Creat React App">Using Webpack with Creat React App</Link></Menu.Item>
+              <Menu.Item key="18"><Link className={styles['sider-menu-link']} to="/option4" title="Unit Testing">Unit Testing</Link></Menu.Item>
+              <Menu.Item key="19"><Link className={styles['sider-menu-link']} to="/option4" title="Routing">Routing</Link></Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
