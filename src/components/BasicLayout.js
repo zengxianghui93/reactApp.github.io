@@ -70,6 +70,9 @@ class BasicLayout extends React.Component {
               <Menu.Item key="18"><Link className={styles['sider-menu-link']} to="/option4" title="Unit Testing">Unit Testing</Link></Menu.Item>
               <Menu.Item key="19"><Link className={styles['sider-menu-link']} to="/option4" title="Routing">Routing</Link></Menu.Item>
             </SubMenu>
+            <SubMenu key="log" title={<span><Icon type="notification" />Learing Log</span>}>
+              <Menu.Item key="1"><Link className={styles['sider-menu-link']} to="/log_1">2019-04-02</Link></Menu.Item>
+            </SubMenu>
           </Menu>
         </Sider>
         <Content style={{ padding: '0 24px', minHeight: 280 }}>
