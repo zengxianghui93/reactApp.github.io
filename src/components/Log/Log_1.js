@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import ReactMarkdown from 'react-markdown';
+import Prism from 'prismjs';
 
 class Log_1 extends PureComponent {
   constructor(props) {
@@ -8,8 +9,6 @@ class Log_1 extends PureComponent {
 
     }
   }
-
-  componentDidUpdate
 
   renderCode_1 = () => {
     const markdown = `
@@ -25,25 +24,20 @@ class Log_1 extends PureComponent {
         }
       }  
     `;
-
     return markdown;
   }
 
-  renderCode_2 = () => {
-    return `create database hero;`;
-  }
-
   render() {
-    // style={{background: '#000', color: '#fff'}}
     const input = '# This is a header\n\nAnd this is a paragraph';
+
     return (
       <div>
-        <ReactMarkdown source='# 1.componentDidUpdate'/>
-        <div style={{background: '#000', color: '#fff', marginBottom: 20}}>
-          <ReactMarkdown source={this.renderCode_1()}/>
+        <ReactMarkdown source='# 1.componentDidUpdate' />
+        <div style={{ marginBottom: 20 }}>
+          <ReactMarkdown source={this.renderCode_1()} className="lang-js" />
         </div>
         <div>
-          <ReactMarkdown source={input}/>
+          <ReactMarkdown source={input} />
         </div>
       </div>
     )
