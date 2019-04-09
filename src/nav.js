@@ -9,6 +9,7 @@ import Charpater_2 from './components/charpater_2';
 import Log_1 from './components/Log/Log_1';
 import Log_2 from './components/Log/Log_2';
 import Log_3 from './components/Log/Log_3';
+import Log_4 from './components/Log/Log_4';
 
 class Nav extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Nav extends React.Component {
         <Route path="/log_1" component={Log_1} />
         <Route path="/log_2" component={Log_2} />
         <Route path="/log_3" component={Log_3} />
+        <Route path="/log_4" component={Log_4} />
       </Switch>
     )
   }

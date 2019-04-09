@@ -74,6 +74,7 @@ class BasicLayout extends React.Component {
               <Menu.Item key="1"><Link className={styles['sider-menu-link']} to="/log_1">2019-04-02</Link></Menu.Item>
               <Menu.Item key="2"><Link className={styles['sider-menu-link']} to="/log_2">2019-04-03</Link></Menu.Item>
               <Menu.Item key="3"><Link className={styles['sider-menu-link']} to="/log_3">2019-04-08</Link></Menu.Item>
+              <Menu.Item key="4"><Link className={styles['sider-menu-link']} to="/log_4">2019-04-09</Link></Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
