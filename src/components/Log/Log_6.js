@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import ReactMarkdown from 'react-markdown';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 import { Button } from 'antd';
-import Prism from 'prismjs';
 
 class Log_6 extends PureComponent {
   // constructor(props) {
@@ -45,6 +47,20 @@ class Log_6 extends PureComponent {
   }
 
   render() {
+    const Component = () => {
+      const codeString = `
+      class Product extends React.Component { 
+        constructor(props) {
+          super(props);
+          this.handleUpVote = this.handleUpVote.bind(this);
+        }
+        handleUpVote() { 
+          this.props.onVote(this.props.id);
+        }
+      }
+    `;
+      return <SyntaxHighlighter language='javascript' style={docco}>{codeString}</SyntaxHighlighter>;  
+    }
 
     return (
       <div>
@@ -60,7 +76,8 @@ class Log_6 extends PureComponent {
           <Button type="primary" size="small" ghost onClick={this.handleBtnClick}>chane text</Button>
           <span>text: {this.state.name}</span>
         </div>
-        
+        {Component()}
+        {/* {Component1()} */}
         {/* <ReactMarkdown source='# 3.Refactoring with the Babel plugin' />
         <ReactMarkdown source='## 3.1 Babel plugins and presets(babel-standalone)' />
         <ReactMarkdown source='# 4.Property initializers()ES7' /> */}
