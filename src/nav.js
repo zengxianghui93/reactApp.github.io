@@ -14,6 +14,7 @@ import Log_5 from './components/Log/Log_5';
 import Log_6 from './components/Log/Log_6';
 import Log_7 from './components/Log/Log_7';
 import Log_8 from './components/Log/Log_8';
+import Log_9 from './components/Log/Log_9';
 
 class Nav extends React.Component {
   render() {
@@ -32,6 +33,7 @@ class Nav extends React.Component {
         <Route path="/log_6" component={Log_6} />
         <Route path="/log_7" component={Log_7} />
         <Route path="/log_8" component={Log_8} />
+        <Route path="/log_9" component={Log_9} />
       </Switch>
     )
   }
